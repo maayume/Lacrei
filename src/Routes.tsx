@@ -1,4 +1,4 @@
-import { Routes as WapperRoute, Route, BrowserRouter } from "react-router-dom";
+import { Routes as WrapperRoute, Route, BrowserRouter } from "react-router-dom";
 
 import  Home  from "./pages/Home";
 import  Login  from "./pages/Login";
@@ -6,18 +6,20 @@ import  PreCadastro  from "./pages/PreCadastro";
 import Cadastro from "./pages/Cadastro";
 import PosCadastro from "./pages/PosCadastro";
 import  Perfil  from "./pages/Perfil";
+import ListaEspera from "./pages/ListaEspera";
 
 export default function Routes(){
     return(
         <BrowserRouter>
-            <WapperRoute>
+            <WrapperRoute>
                 <Route path="/" element={ <Home /> } />
                 <Route path="/login" element={ <Login /> } />
                 <Route path="/precadastro" element={ <PreCadastro /> } />
                 <Route path="/cadastro" element={ <Cadastro /> } />
                 <Route path="/poscadastro" element={ <PosCadastro /> } />
                 <Route path="/perfil" element={ <Perfil /> } />
-            </WapperRoute>
+                <Route path="/listaespera" element={ <ListaEspera /> } />
+            </WrapperRoute>
         </BrowserRouter>
     );
 }
