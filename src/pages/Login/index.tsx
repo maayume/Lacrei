@@ -10,7 +10,7 @@ import "./styles.css"
 
 export default function Login(){
     return(
-        <div className="Login">
+        <>
         <Container>
             <Row>
                 <Col> 
@@ -50,6 +50,6 @@ export default function Login(){
                 </Col>
             </Row>
         </Container>
-    </div>
+    </>
     );
 }

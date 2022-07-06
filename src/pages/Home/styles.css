@@ -1,0 +1,53 @@
+
+Home{
+    display:flex;
+    max-width:1536px;
+}
+Container{
+    display:flex;
+    max-width:1536px;
+    align-items:center;
+    justify-content:center;
+
+}
+body{
+
+    padding:0px;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+};
+
+.Col{
+    display: flex;
+}
+
+.vetor1 img{
+    display:flex;
+    width:211.91px;
+    heigth:508.91px;
+    margin-top:146.19px;
+
+}
+.vetor2{
+    width:384.75px;
+    height:902.46px;
+    margin-top:63.31px;
+    margin-left:980.23px;
+}
+
+h1{
+    width:279.65px;
+    heigth:41.7px;
+    font-family:Nunito;
+    font-style:normal;
+    font-weight:700px;
+
+    
+}
+p{
+    display:flex;
+    max-width: 413.15px;
+}
