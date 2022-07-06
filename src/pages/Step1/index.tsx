@@ -39,7 +39,7 @@ export default function Step1(){
                     <p>Email</p>
                     <input type="email" name="email" id="email" className="input-field" placeholder="Digite seu email"/>
                     </label>
-                    <button id="voltar" >Voltar</button>
+                    <button id="voltar" >Voltarr</button>
                     <button id="Avancar" >Avançar</button>
         </form>
             </C.Container>
