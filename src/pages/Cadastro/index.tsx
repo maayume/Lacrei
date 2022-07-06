@@ -1,18 +1,13 @@
-import { FormLista } from "./styles";
+import "../../styles/global.css";
+import "./styles.css"
 
-
-export default function ListaEspera(){
+export default function Cadastro(){
     return (
-      <FormLista>
-        <body>
-          
+      <div className="cadastro">
+        <h1>Cadastro de Profissional</h1>
+        <h4>Dados pessoais</h4>
 
-      <div className="lista-espera">
-        <h1>Lista de espera para profissionais</h1>
-        <h4>Não atua em São Paulo? deixe seu contato conosco.</h4>
-        <h4>Te avisaremos por email assim que chegarmos ao seu estado.</h4>
-
-        <form action="" id="form-lista-espera" method="post">
+        <form action="" id="form-cadastro" method="post">
             <label htmlFor="nome-completo">
             <p>Nome completo</p>
             <input type="text" name="nome-completo" id="nome-completo" className="input-field" placeholder="Digite seu nome" />
@@ -64,38 +59,10 @@ export default function ListaEspera(){
             <select name="estado" id="estado" form="form-lista-espera" placeholder="Selecione o seu estado">
                 <option value="AC">Selecione seu estado</option>
                 <option value="AC">AC</option>
-                <option value="AL">AL</option>
-                <option value="AM">AM</option>
-                <option value="AP">AP</option>
-                <option value="BA">BA</option>
-                <option value="CE">CE</option>
-                <option value="DF">DF</option>
-                <option value="ES">ES</option>
-                <option value="GO">GO</option>
-                <option value="MA">MA</option>
-                <option value="MG">MG</option>
-                <option value="MS">MS</option>
-                <option value="MT">MT</option>
-                <option value="PA">PA</option>
-                <option value="PB">PB</option>
-                <option value="PE">PE</option>
-                <option value="PI">PI</option>
-                <option value="PR">PR</option>
-                <option value="RJ">RJ</option>
-                <option value="RN">RN</option>
-                <option value="RO">RO</option>
-                <option value="RR">RR</option>
-                <option value="RS">RS</option>
-                <option value="SC">SC</option>
-                <option value="SE">SE</option>
-                <option value="SP">SP</option>
-                <option value="TO">TO</option>
             </select>
             </div>
-            <button id="submit-button" type="submit">Entrar</button>
+            <button id="submit-button" type="submit">Enviar</button>
         </form>
       </div>
-      </body>
-      </FormLista>
     );
   }
