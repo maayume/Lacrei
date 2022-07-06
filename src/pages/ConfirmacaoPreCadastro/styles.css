@@ -1,16 +1,17 @@
 body {
     font-family: 'Nunito', sans-serif;
-    display: block;
     max-width: 1440px;
-    padding: 261px 94px 0 46%; 
     background-image: url('../../assets/background/bg-img-4.png'), url('../../assets/background/bg-img-3.png'), url('../../assets/background/bg-img-5.png');
-    background-position: left, left, 75% 120%;
+    background-position: left, left, 86% 100%;
     background-repeat: no-repeat;
-    background-size: auto;
-    text-align: end;
-    margin: 24 auto;
+    margin: 24px auto;
+    width: 100%;
 }
-
+.confirmacao-pre-cadastro{
+    display: block;
+    padding: 237px 94px 0 46%; 
+    text-align: right;
+}
 .confirmacao-pre-cadastro h1 {
     font-weight: 600;
     font-size: 40px;
@@ -22,7 +23,6 @@ body {
     font-size: 24px;
     color: #000;
     width: 605px;
-
 }
 .confirmacao-pre-cadastro h5 {
     display: block;
@@ -33,9 +33,8 @@ body {
     width: 605px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-height: 768px) {
     .confirmacao-pre-cadastro {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+
     }
 }
