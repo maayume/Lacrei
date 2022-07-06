@@ -1,12 +1,16 @@
-body {
+import styled from "styled-components"
+import bgimg1 from "../../assets/background/bg-img-1.png"
+import bgimg2 from "../../assets/background/bg-img-2.png"
+
+
+export const FormLista = styled.div`
+body{
     font-family: sans-serif;
     padding: 5%;
-    background-image: url('../../assets/background/bg-img-1.png'), url('../../assets/background/bg-img-2.png');
+    background-image: url(${bgimg1}), url(${bgimg2});
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: auto;
-    
-}
+} 
 
 .lista-espera h1 {
     font-weight: 600;
@@ -33,6 +37,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #1F1F1F;
+    margin-top: 25px;
 
 }
 
@@ -60,6 +65,7 @@ select {
 
 #form-radio span {
     margin-right: 25px;
+    padding-left: 10px;
 }
 
 #submit-button {
@@ -98,3 +104,4 @@ select {
     
     }
 }
+`;
