@@ -1,20 +1,20 @@
-
-Home{
-    display:flex;
-    max-width:1536px;
+*{
+    padding:0;
 }
-Container{
+/* Home{
     display:flex;
-    max-width:1536px;
+    max-width:500px;
+    padding:0;
+} */
+/* Container{
+    display:flex;
+    max-width:500px;
     align-items:center;
     justify-content:center;
+    padding:0;
 
-}
-body{
+} */
 
-    padding:0px;
-    
-}
 .row{
     display: flex;
     justify-content: space-between;
@@ -24,6 +24,7 @@ body{
     display: flex;
 }
 
+
 .vetor1 img{
     display:flex;
     width:211.91px;
@@ -32,12 +33,26 @@ body{
 
 }
 .vetor2{
+    /* display:flex; */
     width:384.75px;
     height:902.46px;
     margin-top:63.31px;
     margin-left:980.23px;
+    position:absolute;
 }
 
+.juncao{
+    display:flex;
+    
+}
+
+.cels{
+    width:651.95px;
+    height:654.41px;
+    margin-left:713.04px;
+    margin-top:224px;
+    position:absolute;
+}
 h1{
     width:279.65px;
     heigth:41.7px;

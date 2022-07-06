@@ -25,7 +25,7 @@ export default function Home(){
               
             </Col>
 
-            <Col xs={1}>
+            <Col className="juncao" xs={1}>
                 <img className="vetor2" src={Vetor2}/>
                 <img className="cels"src={Cels}/>
             </Col>
