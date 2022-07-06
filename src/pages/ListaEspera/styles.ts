@@ -10,7 +10,6 @@ body{
     background-image: url(${bgimg1}), url(${bgimg2});
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: auto;
 } 
 
 .lista-espera h1 {
@@ -38,6 +37,7 @@ body{
     font-weight: 700;
     font-size: 18px;
     color: #1F1F1F;
+    margin-top: 25px;
 
 }
 
@@ -65,6 +65,7 @@ select {
 
 #form-radio span {
     margin-right: 25px;
+    padding-left: 10px;
 }
 
 #submit-button {

@@ -92,7 +92,7 @@ export default function ListaEspera(){
                 <option value="TO">TO</option>
             </select>
             </div>
-            <button id="submit-button" type="submit">Enviar</button>
+            <button id="submit-button" type="submit">Entrar</button>
         </form>
       </div>
       </body>
