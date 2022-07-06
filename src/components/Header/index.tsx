@@ -1,24 +1,10 @@
 import { ReactNode } from "react";
-import "./styles.ts";
+import * as C from "./styles";
 
-type Props = {
-    children: ReactNode;
-}
-
-export default function Header({children} : Props){
+export default function Header(){
     return(
         <C.Container>
-            <C.Area>
-                Cadastro de Profissional
-                <C.Steps>
-                    <C.Sidebar>
-
-                    </C.Sidebar>
-                    <C.Page>
-                        {children}
-                    </C.Page>
-                </C.Steps>
-            </C.Area>
+                <h1>Cadastro de Profissional</h1>
         </C.Container>
     );
 }

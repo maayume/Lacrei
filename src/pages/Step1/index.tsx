@@ -1,17 +1,13 @@
 import { ReactNode } from "react";
-import "./styles";
 import  Theme  from "../../components/Theme";
 import * as C from "./styles";
 
-type Props = {
-    children: ReactNode;
-}
-
-export default function Step1({children} : Props){
+export default function Step1(){
     return(
          <Theme>
             <C.Container>
-                oi
+                <p>Passo 1</p>
+                <h3>Dados Profissionais</h3>
             </C.Container>
          </Theme>
     );

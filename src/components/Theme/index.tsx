@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import * as C from "./styles";
-import { Header } from "../Header";
+import Header  from "../Header";
 
 type Props = {
     children: ReactNode;
@@ -10,10 +10,9 @@ export default function Theme({children}: Props){
         <C.Container>
             <C.Area>
                 <Header />
-                Cadastro de Profissional
                 <C.Steps>
                     <C.Sidebar>
-
+                        Theme
                     </C.Sidebar>
                     <C.Page>
                         {children}
