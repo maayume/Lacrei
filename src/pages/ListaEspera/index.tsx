@@ -1,8 +1,12 @@
-import "../../styles/global.css";
-import "./styles.css"
+import { FormLista } from "./styles";
+
 
 export default function ListaEspera(){
     return (
+      <FormLista>
+        <body>
+          
+
       <div className="lista-espera">
         <h1>Lista de espera para profissionais</h1>
         <h4>Não atua em São Paulo? deixe seu contato conosco.</h4>
@@ -91,5 +95,7 @@ export default function ListaEspera(){
             <button id="submit-button" type="submit">Enviar</button>
         </form>
       </div>
+      </body>
+      </FormLista>
     );
   }
