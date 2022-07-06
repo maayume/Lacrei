@@ -1,0 +1,107 @@
+:root{
+    --primary: #018762;
+    --secudary: #000;
+}
+@font-face{
+    font-family: 'Nunito', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    padding: 5%;
+    background-image: url('../../assets/background/bg-img-7.png'), url('../../assets/background/bg-img-8.png');
+    background-position: right, right;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.cadastro h1 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #018762;
+    
+}
+
+.cadastro h4 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #2D2D2D;
+    margin: 0 auto;
+   
+}
+
+#form-cadastro {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-cadastro p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #1F1F1F;
+
+}
+
+.input-field {
+    border: 1px solid #515151;
+    border-radius: 8px;
+    padding: 12px;
+    width: 40%;
+}
+
+.input-estado {
+    margin-top: 20px;
+}
+
+#estado {
+    border: 1px solid #515151;
+    border-radius: 8px;
+    padding: 12px;
+    width: 42%;
+}
+
+select {
+    color: #636c72;
+}
+
+#form-radio span {
+    margin-right: 25px;
+}
+
+#submit-button {
+    padding: 10px 32px;
+    width: 120px;
+    height: 48px;
+    margin-top: 80px;
+    margin-left: 15%;
+    background-color: #018762;
+    color:#fff;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 black;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .input-field {
+        width: 90%;
+    }
+
+    #estado {
+        width: 95%;
+    }
+
+    #form-radio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #submit-button {
+        width: 90%;
+        margin: 80px auto 0;
+    
+    }
+}
