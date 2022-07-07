@@ -1,4 +1,4 @@
-import { FormCadastro } from "../styles";
+import { FormCadastro } from "./styles";
 import { Button } from "../../../components/Button/styles";
 import { Link } from "react-router-dom";
 

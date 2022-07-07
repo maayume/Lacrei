@@ -78,7 +78,7 @@ export const FormCadastro = styled.div`
 
   }
   .form-default {
-    width: 40vh;
+    width: 100%;
     padding: 0px;
     margin: -8px;
   }
@@ -113,5 +113,33 @@ export const FormCadastro = styled.div`
   .paragrafo {
     text-align: right;
     margin-top: 50px;
+  }
+  @media only screen and (max-width: 830px) {
+    .container {
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+
+      .foto2 {
+        display: flex;
+        width: auto;
+
+      }
+      ::after,
+      ::before {
+        box-sizing: none;
+      }
+      .form-control {
+        width: auto;
+      }
+      .order2 {
+        border: 0px solid #2d2d2d;
+      }
+      .row_botton {
+   align-items: center;
+   justify-content: center;
+  }
+    }
   }
 `;

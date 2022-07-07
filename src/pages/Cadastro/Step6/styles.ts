@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import bgimg3 from "../../assets/background/bg-img-3.png";
-import bgimg4 from "../../assets/background/bg-img-4.png";
-import bgimg5 from "../../assets/background/bg-img-5.png";
+import bgimg3 from "../../../assets/background/bg-img-3.png";
+import bgimg4 from "../../../assets/background/bg-img-4.png";
+import bgimg5 from "../../../assets/background/bg-img-5.png";
 
 
 export const FormCadastro = styled.div`
@@ -86,7 +86,7 @@ export const FormCadastro = styled.div`
 
   }
   .form-default {
-    width: 40vh;
+    width: 100%;
     padding: 0px;
     margin: -8px;
   }
@@ -117,6 +117,21 @@ export const FormCadastro = styled.div`
   }
   .f1 {
     font-size: 13px;
+
+  }
+  
+  @media only screen and (max-width: 930px) {
+    * {
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+      width:100%;
+    }
+    .p-5{
+      padding: 1rem;
+    }
+  
 
   }
 `;

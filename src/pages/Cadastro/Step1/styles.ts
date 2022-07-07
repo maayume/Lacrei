@@ -1,28 +1,25 @@
 import styled from "styled-components";
+import bgimg3 from "../../../assets/background/bg-img-3.png";
+import bgimg4 from "../../../assets/background/bg-img-4.png";
+
+
 
 export const FormCadastro = styled.div`
-  .container2 {
+  .container2  {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
   }
-  /* .body {
+  .body {
     font-family: "Nunito", sans-serif;
     padding: 1%;
-    background-image: url();
+    background-image: url(${bgimg3}),url(${bgimg4});
     background-position: right bottom, left bottom;
     background-repeat: no-repeat;
     background-size: auto;
   }
-  .body4 {
-    font-family: "Nunito", sans-serif;
-    padding: 1%;
-    background-image: url();
-    background-position: right bottom, left bottom;
-    background-repeat: no-repeat;
-    background-size: auto;
-  } */
+
 
   h3 {
     padding: 0 0 50px 10px;
@@ -46,20 +43,20 @@ export const FormCadastro = styled.div`
     padding: 10px 32px;
     box-shadow: 0px 1px 3px 0px #0000001a;
     color: #018762;
-    border: 2px solid #018762;
+    border:2px solid #018762;
     border-radius: 5px;
   }
   p {
     color: #018762;
     font-size: 20px;
   }
-  .inputNome {
+  .inputNome{
     padding-bottom: 20px;
   }
-  .row > * {
+  .row>*{
     padding-right: 0;
   }
-  .subtitulo {
+  .subtitulo{
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
@@ -74,10 +71,12 @@ export const FormCadastro = styled.div`
     padding: 0px 10px 0 0;
     display: flex;
     text-align: left;
+
   }
-  .form-label {
+  .form-label{
     display: flex;
     flex-direction: row;
+
   }
   .form-default {
     width: 100%;
@@ -88,71 +87,77 @@ export const FormCadastro = styled.div`
     width: 0px;
   }
   .button_end {
-    display: flex;
+    display:flex;
     justify-content: center;
   }
   .button_end2 {
-    display: flex;
+    display:flex;
     justify-content: center;
     margin-top: 20px;
     margin-left: 1rem;
   }
-  .button_start2 {
-    display: flex;
+  .button_start2{
+    display:flex;
     justify-content: center;
     margin-top: 20px;
     margin-right: 1rem;
+
   }
-  .row_botton {
+  .row_botton{
     display: flex;
     justify-content: center;
+
   }
   .f1 {
     font-size: 13px;
-  }
-  .order2 {
-    border: 1px solid #2d2d2d;
-  }
-  .foto3 {
-    display: flex;
-    justify-content: center;
-    padding: 0 0 100px 0;
-  }
-  .row_botton {
-    margin-top: 50px;
-  }
-  @media only screen and (max-width: 999px) {
-    .order2 {
-      border: 0px solid #2d2d2d;
-    }
-  }
 
+  }
   @media only screen and (max-width: 830px) {
-    .container {
+     .container{
       flex-direction: column;
-      margin: 13px;
+      align-items: flex-start;
+      margin: 0px;
       padding: 0px;
       text-align: center;
 
-      .foto2 {
-        display: flex;
+
+      h3 {
+        padding: 0px;
+        line-height: 40px;
+      }
+      ::after, ::before{
+        box-sizing: none;
+      }
+
+      .form-control{
         width: auto;
 
       }
-      ::after,
-      ::before {
-        box-sizing: none;
-      }
-      .form-control {
-        width: auto;
-      }
-      .order2 {
-        border: 0px solid #2d2d2d;
-      }
-      .row_botton {
-   align-items: center;
-   justify-content: center;
-  }
     }
   }
+
+
+  /* @media only screen and (max-width: 365px) {
+    main,
+    form {
+      width: 30vh;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0px;
+      padding: 0px;
+
+      label {
+        width: 30vh;
+      }
+    }
+  } */
+  /* @media only screen and (max-width: 290px) {
+    main {
+      display: flex;
+      width: 20vh;
+    }
+    h3 {
+      font-size: 30px;
+    } 
+  }*/
 `;

@@ -1,4 +1,4 @@
-import { FormCadastro } from "../styles";
+import { FormCadastro } from "./styles";
 import foto1 from "../../../assets/logo/group7.png";
 import { Link } from "react-router-dom";
 import { Button } from "../../../components/Button/styles";
@@ -12,7 +12,7 @@ export default function Cadastro() {
           <br />
 
           <label className="form-label">
-            <input type="range" min="0" max="1" className="form-default" />
+            <input type="range" min="0" max="1"  value="disabledRange" className="form-default" />
             <input type="range" min="0" max="1" className="form-default" />
             <input type="range" min="0" max="1" className="form-default" />
             <input type="range" min="0" max="1" className="form-default" />

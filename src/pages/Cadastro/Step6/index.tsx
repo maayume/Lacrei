@@ -1,4 +1,4 @@
-import { FormCadastro } from "../styles";
+import { FormCadastro } from "./styles";
 import { Button } from "../../../components/Button/styles";
 import { Link } from "react-router-dom";
 
@@ -21,7 +21,7 @@ export default function PageCad6() {
           <h6>*campos de preenchimento obrigatório</h6>
 
           <div className="container row align-itens-center p-5">
-            <div className=" row col-4">
+            <div className=" row col-3">
               <h6>Nome do Serviço*</h6>
               <input
                 className="form-control form-control-lg"

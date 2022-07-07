@@ -1,5 +1,5 @@
-import { FormCadastro } from "../styles";
-import foto1 from "../../assets/logo/group7.png";
+import { FormCadastro } from "./styles";
+import foto1 from "../../../assets/logo/group7.png";
 import { Button } from "../../../components/Button/styles";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ export default function PageCad4() {
             <input type="range" min="0" max="1" className="form-default" />
             <input type="range" min="0" max="1" className="form-default" />
           </label>
-          <p className="subtitulo">Dados Sobre o loca de atendimento</p>
+          <p className="subtitulo">Dados Sobre o local de atendimento</p>
           <h6>*campos de preenchimento obrigatório</h6>
 
           <div className="container row align-itens-center p-5">
