@@ -10,7 +10,7 @@ export const FormCadastro = styled.div`
     flex-wrap: wrap;
     width: 100%;
   }
-  body {
+  .body {
     font-family: "Nunito", sans-serif;
     padding: 5%;
     background-image: url(${bgimg3}),url(${bgimg4});

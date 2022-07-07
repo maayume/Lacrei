@@ -4,7 +4,7 @@ import foto1 from "../../assets/logo/group7.png";
 export default function Cadastro() {
   return (
     <FormCadastro>
-      <body>
+      <div className="body">
         
 
       <main className="container row align-itens-center p-5">
@@ -67,7 +67,7 @@ export default function Cadastro() {
 
     </div>
       </main>
-      </body>
+      </div>
     </FormCadastro>
   );
 }
