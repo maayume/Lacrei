@@ -7,6 +7,7 @@ import Cadastro from "./pages/Cadastro";
 import PosCadastro from "./pages/PosCadastro";
 import  Perfil  from "./pages/Perfil";
 import ListaEspera from "./pages/ListaEspera";
+import ConfirmaPre from "./pages/Confirmarcoes/confirmacadastro";
 
 export default function Routes(){
     return(
@@ -15,6 +16,7 @@ export default function Routes(){
                 <Route path="/" element={ <Home /> } />
                 <Route path="/login" element={ <Login /> } />
                 <Route path="/precadastro" element={ <PreCadastro /> } />
+                <Route path="/confirmapre" element={ <ConfirmaPre/> } />
                 <Route path="/cadastro" element={ <Cadastro /> } />
                 <Route path="/poscadastro" element={ <PosCadastro /> } />
                 <Route path="/perfil" element={ <Perfil /> } />

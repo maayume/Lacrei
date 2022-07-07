@@ -11,7 +11,7 @@ export const FormPre = styled.div`
   body {
     font-family: "Nunito", sans-serif;
     padding: 0px;
-    background-image: url(${bgimg1}), url(${bgimg2});
+    /* background-image: url(${bgimg1}), url(${bgimg2}); */
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: auto;
