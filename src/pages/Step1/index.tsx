@@ -41,7 +41,7 @@ export default function Step1(){
             <h5>Carta aberta*</h5>
             <h6>Descreva porquê deseja atuar no atendimento a comunidade LGBTQIAPN+. Quais suas motivações? De que forma você se <br></br>identifica com a causa?</h6>
             <C.Area>
-                <button id="voltar" className="botao" href="/cadastro">Voltar</button>
+                <button id="voltar" className="botao" >Voltar</button>
                 <button id="Avancar" className="botao">Avançar</button>
             </C.Area>
         </C.Container>

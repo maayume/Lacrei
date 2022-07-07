@@ -51,7 +51,6 @@ label{
     padding-bottom: 9px;
 }
 button{
-    padding: 10.5px 32px;
     width: 120px;
     height: 48px;
     margin-top: 80px;
@@ -63,7 +62,6 @@ button{
     box-shadow: 0 1px 3px 0 black;
     background-color: #018762;
     color:#fff;
-    text-align: center;
 }
 #voltar{
     background-color: #FFF;
@@ -102,9 +100,9 @@ button{
 
 `
 export const Area = styled.div`
-    padding: 153px 140px;
     margin: auto;
     max-width: 980px;
     min-height:100vh;
     flex-direction: column;
+
 `
