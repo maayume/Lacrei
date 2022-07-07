@@ -1,27 +1,27 @@
-*{
-    padding:0;
-}
-/* Home{
+
+Home{
     display:flex;
     max-width:500px;
     padding:0;
-} */
-/* Container{
+}
+Container{
     display:flex;
+    box-sizing: relative;
+    position: relative;
     max-width:500px;
     align-items:center;
     justify-content:center;
     padding:0;
 
-} */
+}
 
 .row{
     display: flex;
-    justify-content: space-between;
 };
 
 .Col{
     display: flex;
+    fustify-content:center;
 }
 
 
@@ -37,32 +37,103 @@
     width:384.75px;
     height:902.46px;
     margin-top:63.31px;
-    margin-left:980.23px;
+    margin-left:340.23px;
     position:absolute;
 }
 
-.juncao{
-    display:flex;
-    
-}
+
 
 .cels{
     width:651.95px;
     height:654.41px;
-    margin-left:713.04px;
+    margin-left:80.04px;
     margin-top:224px;
     position:absolute;
 }
+
+.texto{
+    display:inline;
+    align-items:center;
+    justify-content: center;
+}
 h1{
+    /* display:flex; */
     width:279.65px;
     heigth:41.7px;
-    font-family:Nunito;
+    font-family: 'Nunito', sans-serif;
     font-style:normal;
     font-weight:700px;
+    font-size:40px;
+    padding-left:15.85px;
+    margin-top:342.01px;
+    /* align-items:center; */
 
     
 }
 p{
     display:flex;
     max-width: 413.15px;
+    width:433.15px;
+    heigth:201.88px;
+    /* margin-top:383.72px; */
+    /* margin-left:249px; */
+    font-family: 'Nunito', sans-serif;
+    font-style:normal;
+    font-weight:400px;
+    font-size:24px;
+    line-height:36px;
+    padding-left:15.85px;
+    align-items:center;
+}
+
+h2{color:#018762;
+    /* position:absolute; */
+    display:flex;
+    width:117.58px;
+    heigth:32.79px;
+    font-family: 'Nunito', sans-serif;
+    font-style:normal;
+    font-weight:700px;
+    font-size:18px;
+    padding-left:15.85px;
+    margin-left:-80px;
+    margin-top:622.31px;
+    align-items:center;
+    line-height:150%;
+}
+
+
+.button1{
+    height:48px;
+    width:117px;
+    /* display:flex; */
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    /* margin-top:32px; */
+    background-color:#018762;
+    color:white;
+    border:none;
+    border-radius:8px;
+    margin-left:15px;
+    padding:10px 32px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0);
+
+}
+
+.button2{
+    height:48px;
+    width:174px;
+    justify-content:center;
+    align-items:center;
+    /* margin-top:32px; */
+    background-color:white;
+    color:#018762;
+    border:solid px;
+    border-color:#018762;
+    border-radius:8px;
+    margin-left:33px;
+    padding:10px 32px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0);
+
 }

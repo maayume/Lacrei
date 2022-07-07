@@ -11,6 +11,7 @@ import "./styles.css"
 export default function Login(){
     return(
         <>
+        
         <Container>
             <Row>
                 <Col> 
@@ -37,13 +38,13 @@ export default function Login(){
                             Criar
                         </Button>  
 
-                        <P>Quero ser um profissional!</P>
+                        {/* <P>Quero ser um profissional!</P> */}
                     </Form>
 
                 </Col>
                 <Col>
-                        <H2> Já possui conta? </H2>
-                        <p>Entre com seu Lacrei ID e aproveite os nossos profissionais da saúde.</p>
+                        <h2 className="cabecario2"> Já possui conta? </h2>
+                        <p className="paragrafo2">Entre com seu Lacrei ID e aproveite os nossos profissionais da saúde.</p>
                         <button className="btn btn-primary" type="submit">Entrar</button>
 
 
