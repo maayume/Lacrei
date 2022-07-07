@@ -1,10 +1,81 @@
+import { useState, useEffect, FormEvent, ChangeEvent } from "react";
+import axios from "axios";
 import { FormLista } from "./styles";
+import { cadastroListaEspera } from "../../services/MainApi/lista-de-espera"
+
 
 
 export default function ListaEspera(){
+
+  // estados dos inputs
+
+    const [nome, setNome] = useState<string>("")
+    const [email, setEmail] = useState<string>("")
+    const [atuacao, setAtuacao] = useState<string>("")
+    const [estado, setEstado] = useState<string>("")
+
+    function handleListChange(event: ChangeEvent<HTMLSelectElement>) {
+      setEstado(event.target.value)
+    }
+
+  // observa a mudança de valor do input radio  
+    function handleRadioChange(event: ChangeEvent<HTMLInputElement>) {
+      setAtuacao(event.target.value)
+    }
+
+  // variavel que armazena opções da lista suspensa
+  
+  const options = [
+    {value: "AC"},
+    {value: "AL"},
+    {value: "AM"},
+    {value: "AP"},
+    {value: "BA"},
+    {value: "CE"},
+    {value: "DF"},
+    {value: "ES"},
+    {value: "GO"},
+    {value: "MA"},
+    {value: "MG"},
+    {value: "MS"},
+    {value: "MT"},    
+    {value: "PA"},
+    {value: "PB"},
+    {value: "PE"},
+    {value: "PI"},
+    {value: "PR"},
+    {value: "RJ"},
+    {value: "RN"},
+    {value: "RS"},
+    {value: "RO"},
+    {value: "RR"},
+    {value: "SC"},
+    {value: "SP"},
+    {value: "SE"},
+    {value: "TO"}
+  ]
+
+    // payload é o objeto que enviar dados pra API
+
+    async function cadastro(event: FormEvent) {
+      event.preventDefault();
+
+      const payload = {
+        nome,
+        email,
+        atuacao,
+        estado,
+      }
+      
+      cadastroListaEspera(payload)
+      
+    }
+
+
     return (
+
       <FormLista>
-        <body>
+        <div id="body">
           
 
       <div className="lista-espera">
@@ -15,87 +86,68 @@ export default function ListaEspera(){
         <form action="" id="form-lista-espera" method="post">
             <label htmlFor="nome-completo">
             <p>Nome completo</p>
-            <input type="text" name="nome-completo" id="nome-completo" className="input-field" placeholder="Digite seu nome" />
+            <input type="text" name="nome-completo" id="nome-completo" className="input-field" placeholder="Digite seu nome" onChange={((event) => setNome(event.target.value))} value={nome}/>
             </label>
             <label htmlFor="email">
             <p>Email</p>
-            <input type="email" name="email" id="email" className="input-field" placeholder="Digite seu email"/>
+            <input type="email" name="email" id="email" className="input-field" placeholder="Digite seu email" onChange={((event) => setEmail(event.target.value))} value={email} />
             </label>
             <div id="form-radio">
                 <p>Área de atuação</p>
                 
                 <label htmlFor="enfermagem">
-                <input type="radio" name="area-de-atuacao" id="enfermagem" value="enfermagem"/>    
+                <input type="radio" name="area-de-atuacao" id="enfermagem" value="enfermagem" checked={atuacao === "enfermagem"} onChange={handleRadioChange}/>    
                 <span>Enfermagem</span>
                 </label>
 
                 <label htmlFor="fisioterapia">
-                <input type="radio" name="area-de-atuacao" id="fisioterapia" value="fisioterapia"/>
+                <input type="radio" name="area-de-atuacao" id="fisioterapia" value="fisioterapia" checked={atuacao === "fisioterapia"} onChange={handleRadioChange}/>
                 <span>Fisioterapia</span>
                 </label>
 
                 <label htmlFor="fonoaudiologia">
-                <input type="radio" name="area-de-atuacao" id="fonoaudiologia" value="fonoaudiologia"/>
+                <input type="radio" name="area-de-atuacao" id="fonoaudiologia" value="fonoaudiologia" checked={atuacao === "fonoaudiologia"} onChange={handleRadioChange}/>
                 <span>Fonoaudiologia</span>
                 </label>
 
                 <label htmlFor="medicina">
-                <input type="radio" name="area-de-atuacao" id="medicina" value="medicina"/>
+                <input type="radio" name="area-de-atuacao" id="medicina" value="medicina" checked={atuacao === "medicina"} onChange={handleRadioChange}/>
                 <span>Medicina</span>               
                 </label>
 
                 <label htmlFor="nutricao">
-                <input type="radio" name="area-de-atuacao" id="nutricao" value="nutricao"/>
+                <input type="radio" name="area-de-atuacao" id="nutricao" value="nutricao" checked={atuacao === "nutricao"} onChange={handleRadioChange}/>
                 <span>Nutrição</span>  
                 </label>
 
                 <label htmlFor="odontologia">
-                <input type="radio" name="area-de-atuacao" id="odontologia" value="odontologia"/>    
+                <input type="radio" name="area-de-atuacao" id="odontologia" value="odontologia" checked={atuacao === "odontologia"} onChange={handleRadioChange}/>    
                 <span>Odontologia</span>              
                 </label>
 
                 <label htmlFor="psicologia">
-                <input type="radio" name="area-de-atuacao" id="psicologia" value="psicologia"/>
+                <input type="radio" name="area-de-atuacao" id="psicologia" value="psicologia" checked={atuacao === "psicologia"} onChange={handleRadioChange}/>
                 <span>Psicologia</span>  
                 </label>
             </div>
             <div className="input-estado">
             <p>Estado de atuação profissional</p>
-            <select name="estado" id="estado" form="form-lista-espera" placeholder="Selecione o seu estado">
-                <option value="AC">Selecione seu estado</option>
-                <option value="AC">AC</option>
-                <option value="AL">AL</option>
-                <option value="AM">AM</option>
-                <option value="AP">AP</option>
-                <option value="BA">BA</option>
-                <option value="CE">CE</option>
-                <option value="DF">DF</option>
-                <option value="ES">ES</option>
-                <option value="GO">GO</option>
-                <option value="MA">MA</option>
-                <option value="MG">MG</option>
-                <option value="MS">MS</option>
-                <option value="MT">MT</option>
-                <option value="PA">PA</option>
-                <option value="PB">PB</option>
-                <option value="PE">PE</option>
-                <option value="PI">PI</option>
-                <option value="PR">PR</option>
-                <option value="RJ">RJ</option>
-                <option value="RN">RN</option>
-                <option value="RO">RO</option>
-                <option value="RR">RR</option>
-                <option value="RS">RS</option>
-                <option value="SC">SC</option>
-                <option value="SE">SE</option>
-                <option value="SP">SP</option>
-                <option value="TO">TO</option>
+            <select name="estado" id="estado" form="form-lista-espera" placeholder="Selecione o seu estado" onChange={handleListChange}>
+                <option disabled defaultValue="">Selecione seu estado</option>
+               {options.map((option, index) => (
+                <option key={index} defaultValue={option.value}>{option.value}</option>
+               ))}
             </select>
             </div>
-            <button id="submit-button" type="submit">Entrar</button>
+            <button id="submit-button" type="submit" onClick={cadastro}>Entrar</button>
         </form>
       </div>
-      </body>
+      </div>
+
+      
       </FormLista>
+
+      
+      
     );
   }
