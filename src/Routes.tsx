@@ -3,7 +3,7 @@ import { Routes as WrapperRoute, Route, BrowserRouter } from "react-router-dom";
 import  Home  from "./pages/Home";
 import  Login  from "./pages/Login";
 import  PreCadastro  from "./pages/PreCadastro";
-import Cadastro from "./pages/Cadastro";
+import Step1 from "./pages/Step1";
 import PosCadastro from "./pages/PosCadastro";
 import  Perfil  from "./pages/Perfil";
 import ListaEspera from "./pages/ListaEspera";
@@ -16,7 +16,7 @@ export default function Routes(){
                 <Route path="/" element={ <Home /> } />
                 <Route path="/login" element={ <Login /> } />
                 <Route path="/precadastro" element={ <PreCadastro /> } />
-                <Route path="/cadastro" element={ <Cadastro /> } />
+                <Route path="/step1" element={ <Step1 /> } />
                 <Route path="/poscadastro" element={ <PosCadastro /> } />
                 <Route path="/perfil" element={ <Perfil /> } />
                 <Route path="/listaespera" element={ <ListaEspera /> } />
