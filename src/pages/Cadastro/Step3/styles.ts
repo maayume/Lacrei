@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import bgimg3 from "../../assets/background/bg-img-3.png";
-import bgimg4 from "../../assets/background/bg-img-4.png";
-import bgimg5 from "../../assets/background/bg-img-5.png";
+
 
 
 export const FormCadastro = styled.div`
@@ -11,10 +9,10 @@ export const FormCadastro = styled.div`
     flex-wrap: wrap;
     width: 100%;
   }
-  .body {
+  /* .body {
     font-family: "Nunito", sans-serif;
     padding: 1%;
-    background-image: url(${bgimg3}),url(${bgimg4});
+    background-image: url();
     background-position: right bottom, left bottom;
     background-repeat: no-repeat;
     background-size: auto;
@@ -22,11 +20,11 @@ export const FormCadastro = styled.div`
   .body4 {
     font-family: "Nunito", sans-serif;
     padding: 1%;
-    background-image: url(${bgimg5});
+    background-image: url();
     background-position: right bottom, left bottom;
     background-repeat: no-repeat;
     background-size: auto;
-  }
+  } */
 
   h3 {
     padding: 0 0 50px 10px;
@@ -117,6 +115,17 @@ export const FormCadastro = styled.div`
   }
   .f1 {
     font-size: 13px;
-
   }
+  .order2 {
+    border: 1px solid #2D2D2D;
+  }
+  .foto3 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 100px 0;
+  }
+  .row_botton {
+    margin-top:50px;
+  }
+
 `;
