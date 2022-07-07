@@ -8,6 +8,7 @@ import PosCadastro from "./pages/PosCadastro";
 import  Perfil  from "./pages/Perfil";
 import ListaEspera from "./pages/ListaEspera";
 import ConfPreCadastro from "./pages/ConfirmacaoPreCadastro";
+import Decisao from "./pages/Decisao";
 
 export default function Routes(){
     return(
@@ -21,6 +22,7 @@ export default function Routes(){
                 <Route path="/perfil" element={ <Perfil /> } />
                 <Route path="/listaespera" element={ <ListaEspera /> } />
                 <Route path="/confirmacaocadastro" element={ <ConfPreCadastro /> } />
+                <Route path="/decisao" element={ <Decisao /> } />
             </WrapperRoute>
         </BrowserRouter>
     );
