@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const StylePreCadastro = styled.div`
 div{
     padding: 219px 0px 0 625px;
     text-align: end;
+    width: 100%;
 }
 h1{
     color: #018762;

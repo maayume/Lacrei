@@ -1,18 +1,21 @@
 import styled from "styled-components";
-import bgimg7 from "../../assets/background/bg-img-7.png";
+import bgimg7 from "../../assets/background/bg-img-7.png"
 
-export const Container = styled.div`
+export const StyleStep1 = styled.div`
+
 body{
     font-family: sans-serif;
     padding: 5%;
     background-image: url(${bgimg7});
-    background-position: right;
+    background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: auto;
-    min-height: 100vh;
-    font-size: 16px;
-} 
-    padding: 94px 102px 40px;
+    width: 100%;
+    margin: 0;
+}
+#container{
+    width: 100xw;
+    height: 100vw;
+}
 h1{
     color: #018762;
     font-size: 40px;
@@ -100,6 +103,7 @@ button{
 
 `
 export const Area = styled.div`
+    display: box;
     margin: auto;
     max-width: 980px;
     min-height:100vh;

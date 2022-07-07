@@ -1,8 +1,10 @@
-import * as C from "./styles";
+import { StyleStep1, Area}from "./styles";
 
 export default function Step1(){
     return(
-        <C.Container className="container">
+        <StyleStep1>
+            <body>
+            <div id="container">
             <h1>Cadastro de Profissional</h1>
             <h3>Dados Profissionais</h3>
             <h5>*Campos de preenchimento obrigatório</h5>
@@ -40,10 +42,12 @@ export default function Step1(){
             </form>
             <h5>Carta aberta*</h5>
             <h6>Descreva porquê deseja atuar no atendimento a comunidade LGBTQIAPN+. Quais suas motivações? De que forma você se <br></br>identifica com a causa?</h6>
-            <C.Area>
+            <Area>
                 <button id="voltar" className="botao" >Voltar</button>
                 <button id="Avancar" className="botao">Avançar</button>
-            </C.Area>
-        </C.Container>
+            </Area>
+            </div>
+            </body>
+        </StyleStep1>
     );
 }

@@ -1,9 +1,9 @@
 import "../../styles/global.css";
-import * as C from "./styles";
+import { StylePreCadastro } from "./styles";
 
 export default function ConfirmacaoPreCadastro(){
     return (
-      <C.Container>
+      <StylePreCadastro>
       <div className="confirmacao-pre-cadastro">
         <h1>Pré-Cadastro Confirmado!</h1>
         <h4>Agora vamos verificar o número de inscrição fornecido em seu conselho profissional.<br></br>
@@ -11,6 +11,6 @@ export default function ConfirmacaoPreCadastro(){
         <h5>Obrigade por apoiar essa causa.</h5>
         <button id="voltar" className="botao" >Voltar na página anterior</button>
       </div>
-      </C.Container>
+      </StylePreCadastro>
     );
   }
