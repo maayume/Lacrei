@@ -35,7 +35,7 @@ export default function Home(){
               <p><br/>Está precisando cuidar da saúde? Encontre os profissionais capacitades a
                  ouvir o que você tem a dizer, com respeito e segurança!<br/><br/></p>
               <div className="buttons">
-                 <Button className="button1" variant="success" type="submit">Entrar</Button>{' '}
+                 <Button className="btn-esquerdo1" href='#' variant="link">Criar</Button>
                  <Button className="button2" variant="outline-secondary"> Carta Aberta</Button>{' '}
               </div>
 
