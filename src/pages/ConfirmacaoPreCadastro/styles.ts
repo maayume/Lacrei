@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 div{
-    padding: 261px 0px 0 667px;
+    padding: 219px 0px 0 625px;
     text-align: end;
 }
 h1{
-    fonte-size: 40px;
     color: #018762;
     font-weight: 600;
-    padding-button: 40px;
+    height: 48px;
+}
+h1{
+    fonte-size: 40px;
 }
 h4, h5{
     color: #000;
