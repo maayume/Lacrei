@@ -103,37 +103,39 @@ h2{color:#018762;
 }
 
 
-.button1{
+.btn-esquerdo1{
     height:48px;
     width:117px;
-    /* display:flex; */
+    font-family: 'Nunito', sans-serif;
+    font-style:normal;
+    font-weight:700px;
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    /* margin-top:32px; */
     background-color:#018762;
     color:white;
     border:none;
     border-radius:8px;
     margin-left:15px;
     padding:10px 32px;
-    box-shadow: 0px 1px 3px rgba(0,0,0,0);
+    box-shadow: 0px 1px 3px rgba(0,0,0,2);
+    text-decoration:none;
 
 }
 
-.button2{
+.btn-direito1{
     height:48px;
     width:174px;
     justify-content:center;
     align-items:center;
-    /* margin-top:32px; */
     background-color:white;
     color:#018762;
-    border:solid px;
+    border:solid 2px;
     border-color:#018762;
-    border-radius:px;
+    border-radius:8px;
     margin-left:33px;
     padding:10px 32px;
-    box-shadow: 0px 1px 3px rgba(0,0,0,0);
+    box-shadow: 0px 1px 3px rgba(0,0,0,2);
+    text-decoration:none;
 
 }
