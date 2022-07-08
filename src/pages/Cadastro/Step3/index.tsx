@@ -41,7 +41,7 @@ export default function PageCad3() {
               </div> 
               <div className="row_botton">
             <div className="button_start2">
-              <Link to="/pageCad2">
+              <Link to="/Step2">
                 <Button type="button" className="btn2 btn-ligth">
                   Voltar
                 </Button>

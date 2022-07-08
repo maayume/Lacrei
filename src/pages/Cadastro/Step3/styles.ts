@@ -7,6 +7,9 @@ export const FormCadastro = styled.div`
     flex-wrap: wrap;
     width: 100%;
   }
+  .body{
+    font-family: "Nunito", sans-serif;
+  }
   /* .body {
     font-family: "Nunito", sans-serif;
     padding: 1%;
@@ -102,6 +105,7 @@ export const FormCadastro = styled.div`
     justify-content: center;
     margin-top: 20px;
     margin-right: 1rem;
+
   }
   .row_botton {
     display: flex;

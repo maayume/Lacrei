@@ -137,27 +137,5 @@ export const FormCadastro = styled.div`
   }
 
 
-  /* @media only screen and (max-width: 365px) {
-    main,
-    form {
-      width: 30vh;
-      flex-direction: column;
-      align-items: flex-start;
-      margin: 0px;
-      padding: 0px;
 
-      label {
-        width: 30vh;
-      }
-    }
-  } */
-  /* @media only screen and (max-width: 290px) {
-    main {
-      display: flex;
-      width: 20vh;
-    }
-    h3 {
-      font-size: 30px;
-    } 
-  }*/
 `;

@@ -60,7 +60,7 @@ export default function Cadastro() {
               <div className="button_end">
 
 
-                <Link to="/pageCad4">
+                <Link to="/Step2">
                   <Button id="submit-button" type="submit">
                     Avançar
                   </Button>

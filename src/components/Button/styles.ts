@@ -8,4 +8,5 @@ export const Button = styled.button`
     color: white;
     border:2px solid #018762;
     border-radius: 5px;
+    box-shadow: 0 1px 3px 0 black;
     `;

@@ -1,9 +1,9 @@
-import { FormPre } from "../PreCadastro/styles";
-import Logo4 from "../../assets/logo/image4.png"
+import { Container } from "./styles";
+import Logo4 from "../../assets/logo/logo.png";
 
-export default function ConfirmaPre() {
+export function ConfirmaPre() {
   return (
-    <FormPre>
+    <Container>
     <body>
       <main className="container row align-itens-center  p-5">
         <h3>Pré-cadastro confirmado</h3>
@@ -14,6 +14,6 @@ Em até 24 horas te enviaremos um e-mail com um link para finalização do cadas
 
         </main>
         </body>
-        </FormPre>
+        </Container>
   )
 }

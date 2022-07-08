@@ -124,7 +124,7 @@ export default function PageCad6() {
               </Link>
             </div>
             <div className="button_end2">
-              <Link to="/Step7">
+              <Link to="/final">
                 <Button type="submit">Avançar</Button>
               </Link>
             </div>

@@ -3,7 +3,8 @@ import bgimg1 from "../../assets/background/bg-img-1.png";
 import bgimg2 from "../../assets/background/bg-img-2.png";
 
 
-export const FormPre = styled.div`
+
+export const Container = styled.div`
   div {
     margin-right: 6rem;
   }
@@ -11,7 +12,7 @@ export const FormPre = styled.div`
   body {
     font-family: "Nunito", sans-serif;
     padding: 0px;
-    /* background-image: url(${bgimg1}), url(${bgimg2}); */
+    background-image: url(${bgimg1}), url(${bgimg2});
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: auto;

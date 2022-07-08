@@ -5,7 +5,7 @@ import bgimg2 from "../../assets/background/bg-img-2.png"
 
 export const FormLista = styled.div`
 body{
-    font-family: sans-serif;
+    font-family: "Nunito", sans-serif;
     padding: 5%;
     background-image: url(${bgimg1}), url(${bgimg2});
     background-position: right bottom;

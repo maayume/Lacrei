@@ -41,7 +41,7 @@ export default function PageCad7() {
 
           <div className="row_botton">
             <div className="button_start2">
-              <Link to="/pageCad5">
+              <Link to="/final">
                 <Button type="button" className="btn2 btn-ligth">
                   Completar depois
                 </Button>
