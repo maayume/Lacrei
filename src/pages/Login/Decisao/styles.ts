@@ -40,7 +40,7 @@ export const Container = styled.div`
     margin: 30px auto;
 }
 #content-text div {
-    text-align: left;
+    text-align: center;
     padding-left: 10px;
     margin-bottom: 50px;
     
@@ -67,6 +67,13 @@ export const Container = styled.div`
     border-radius: 8px;
     box-shadow: 0 1px 3px 0 black;
     margin-bottom: 50px;
+}
+.btnespera{
+    
+    background: white;
+    color: #018762;
+    border: 1px solid #018762; 
+  
 }
 @media only screen and (max-width: 1024px) {
     #body{

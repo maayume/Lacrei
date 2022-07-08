@@ -8,9 +8,7 @@ export default function Decisao() {
   return (
     <Container>
       <div id="body">
-        <a>
-          <img src={backIcon} />
-        </a>
+      
         <div id="content">
           <div id="title">
             <p>Faça parte </p>
@@ -46,7 +44,7 @@ export default function Decisao() {
 
             <div className="button_end2">
               <Link to="/listaespera">
-                <Button type="button">Lista de espera</Button>
+                <Button type="button" className="btnespera">Lista de espera</Button>
               </Link>
             </div>
           </div>

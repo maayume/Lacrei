@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { Button } from "../../components/Button/styles";
 import { FormPre } from "./styles";
 
 export default function PreCadastro() {
@@ -92,9 +94,13 @@ export default function PreCadastro() {
                 Concordo com os Termos de Uso e Política de Privacidade.
               </label>
             </div>
-            <button type="submit" className="btn btn-secondary">
-              Entrar
-            </button>
+            <div className="button_end">
+              <Link to="/confirmapre">
+                <Button id="submit-button" type="submit">
+                  Enviar
+                </Button>
+              </Link>
+            </div>
           </form>
         </main>
       </body>
