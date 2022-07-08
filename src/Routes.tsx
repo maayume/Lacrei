@@ -9,6 +9,7 @@ import  Perfil  from "./pages/Perfil";
 import ListaEspera from "./pages/ListaEspera";
 import ConfPreCadastro from "./pages/ConfirmacaoPreCadastro";
 import ConfirmacaoCadastro from "./pages/ConfirmacaoCadastro";
+import ConfirmacaoInscricao from "./pages/ConfirmacaoInscricao";
 
 export default function Routes(){
     return(
@@ -23,6 +24,7 @@ export default function Routes(){
                 <Route path="/listaespera" element={ <ListaEspera /> } />
                 <Route path="/confirmacaoprecadastro" element={ <ConfPreCadastro /> } />
                 <Route path="/confirmacaocadastro" element={ <ConfirmacaoCadastro /> } />
+                <Route path="/confirmacaoinscricao" element={ <ConfirmacaoInscricao /> } />
             </WrapperRoute>
         </BrowserRouter>
     );
