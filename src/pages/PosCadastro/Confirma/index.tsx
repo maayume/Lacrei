@@ -13,7 +13,7 @@ export default function Final(){
                 <div className="button_end">
 
 
-<Link to="/">
+<Link to="/login">
   <Button id="submit-button" type="submit">
     Voltar para a página inicial
   </Button>
